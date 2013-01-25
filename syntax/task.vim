@@ -16,15 +16,14 @@ syntax match taskDoneItem "^\s*✓.*" contains=taskDoneIcon,taskKeyword
 
 highlight taskKeyword guifg=#96CBFE guibg=NONE gui=NONE ctermfg=blue ctermbg=NONE cterm=NONE
 
-highlight taskWorkingItem guifg=#f6f3e8 guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-highlight taskDoneItem guifg=#A8FF60 guibg=NONE gui=italic ctermfg=green ctermbg=NONE cterm=NONE
+highlight taskWorkingItem guifg=black guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+highlight taskDoneItem guifg=#048307 guibg=NONE gui=italic ctermfg=green ctermbg=NONE cterm=NONE
 
-highlight taskWorkingIcon guifg=#FF6C60 guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
-highlight taskDoneIcon guifg=#A8FF60 guibg=NONE gui=italic ctermfg=green ctermbg=NONE cterm=NONE
+highlight taskWorkingIcon guifg=black guibg=NONE gui=NONE ctermfg=red ctermbg=NONE cterm=NONE
+highlight taskDoneIcon guifg=#048307 guibg=NONE gui=italic ctermfg=green ctermbg=NONE cterm=NONE
 
 syntax match sectionTitleLine "^.*:\s*$" contains=sectionTitle
 syntax match sectionTitle "\S.*:\s*$"
 highlight sectionTitle guifg=#96CBFE guibg=NONE gui=bold,underline ctermfg=blue ctermbg=NONE cterm=bold,underline
 
 let b:current_syntax = "task"
-
